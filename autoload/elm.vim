@@ -60,8 +60,10 @@ function! elm#Format() abort
   let l:tmpname = tempname() . '.elm'
   call writefile(getline(1, '$'), l:tmpname)
 
+  let l:format_options = get(g:, 'elm_format_options', "")
+
   " call elm-format on the temporary file
-  let l:out = s:ExecuteInRoot('elm-format ' . l:tmpname . ' --output ' . l:tmpname)
+  let l:out = s:ExecuteInRoot('elm-format ' . l:format_options . ' ' . l:tmpname . ' --output ' . l:tmpname)
 
   " if there is no error
   if v:shell_error == 0

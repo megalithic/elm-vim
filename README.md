@@ -132,6 +132,7 @@ let g:elm_browser_command = ""
 let g:elm_detailed_complete = 0
 let g:elm_format_autosave = 1
 let g:elm_format_fail_silently = 0
+let g:elm_format_options = ""
 let g:elm_setup_keybindings = 1
 ```
 
@@ -139,7 +140,7 @@ let g:elm_setup_keybindings = 1
 
 * `:ElmMakeMain` attempts to call `elm-make` with "Main.elm".
 
-* `:ElmTest` calls `elm-test` with the given file. If no file is given it runs it in the root of your project. 
+* `:ElmTest` calls `elm-test` with the given file. If no file is given it runs it in the root of your project.
 
 * `:ElmRepl` runs `elm-repl`, which will return to vim on exiting.
 

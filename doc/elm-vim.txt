@@ -87,7 +87,7 @@ COMMANDS                                                         *elm-commands*
 :ElmTest [file]
 
     ElmTest calls `elm-test` with the given {file}. If no {file} is given
-    it runs it in the root of your project. 
+    it runs it in the root of your project.
 
 :ElmRepl
 
@@ -215,6 +215,12 @@ This setting toggles whether format errors show be display.
 >
   let g:elm_format_fail_silently = 0
 <
+
+                                                       *'g:elm_format_options'*
+
+This setting allows you to pass in additional `elm-format` command-line options.
+>
+  let g:elm_format_options = ""
 
 
 ===============================================================================

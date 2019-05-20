@@ -31,6 +31,10 @@ if !exists('g:elm_format_fail_silently')
     let g:elm_format_fail_silently = 0
 endif
 
+if !exists('g:elm_format_options')
+    let g:elm_format_options = ""
+endif
+
 if !exists('g:elm_setup_keybindings')
 	let g:elm_setup_keybindings = 1
 endif
